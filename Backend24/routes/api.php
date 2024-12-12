@@ -39,7 +39,10 @@ Route :: delete ('/animals/{id}', function() {
 });
 
 
-
+Route::get('/students', 'StudentController@index');
+Route::post('/students', 'StudentController@store');
+Route::put('/students/{id}', 'StudentController@update');
+Route::delete('/students/{id}', 'StudentController@destroy');
 
 
 
